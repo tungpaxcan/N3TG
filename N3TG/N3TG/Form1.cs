@@ -21,5 +21,17 @@ namespace N3TG
         {
 
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string User = txtUserName.Text;
+            string Pass = txtPass.Text;
+
+
+           if(User == "admin" && Pass == "admin")
+            {
+                MessageBox.Show("Chúc mừng đã đăng nhập thành công!!!");
+            }
+        }
     }
 }
